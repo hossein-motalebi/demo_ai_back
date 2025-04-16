@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.AZURE_REGISTRY_PASSWORD }}
 
       - name: Build docker image and push
-        run:
+        run: |
           docker build -t registredemo.azurecr.io/backdemo:latest .
           docker push registredemo.azurecr.io/backdemo:latest
 
