@@ -1,0 +1,76 @@
+{
+  "features": [
+    {
+      "name": "Support",
+      "description": "A price level where a stock tends to find buying interest, preventing it from falling further. It's considered a 'floor' that the price struggles to break below.",
+      "parameters": {
+        "Time Interval": ""
+      }
+    },
+    {
+      "name": "Resistance",
+      "description": "A price level where a stock encounters selling interest, preventing it from rising further. It's considered a 'ceiling' that the price struggles to break above.",
+      "parameters": {
+        "Time Interval": ""
+      }
+    },
+    {
+      "name": "Simple Moving Average (SMA)",
+      "description": "The average price of a stock over a specific time period, used to smooth out price data and identify trends.",
+      "parameters": {
+        "Time": "",
+        "period": ""
+      }
+    },
+    {
+      "name": "Exponential Moving Average (EMA)",
+      "description": "A type of moving average that gives more weight to recent prices.",
+      "parameters": {
+        "Time": "",
+        "period": ""
+      }
+    },
+    {
+      "name": "MACD (Moving Average Convergence Divergence)",
+      "description": "A technical indicator that helps investors identify price trends, measure trend momentum, and identify entry points for buying or selling.",
+      "parameters": {
+        "Time": "",
+        "period1": "",
+        "period2": ""
+      }
+    },
+    {
+      "name": "Bollinger Bands",
+      "description": "A technical analysis tool that helps investors and traders understand market volatility.",
+      "parameters": {
+        "Time": "",
+        "period": "",
+        "k": ""
+      }
+    },
+    {
+      "name": "Relative Strength Index (RSI)",
+      "description": "RSI measures the speed and magnitude of a security's recent price changes to detect overbought or oversold conditions. It can signal when to buy and sell, typically considering RSI > 70 as overbought and RSI < 30 as oversold.",
+      "parameters": {
+        "Time": "",
+        "period": ""
+      }
+    },
+    {
+      "name": "Stochastic Oscillator",
+      "description": "A momentum indicator comparing the closing price of a security to its price range over a period, used to generate overbought and oversold signals.",
+      "parameters": {
+        "Time": "",
+        "Period": ""
+      }
+    },
+    {
+      "name": "Price Rate of Change (ROC) Indicator",
+      "description": "A momentum-based technical indicator that measures the percentage change in price between the current price and the price a certain number of periods ago.",
+      "parameters": {
+        "Time": "",
+        "Period": ""
+      }
+    }
+  ]
+}
