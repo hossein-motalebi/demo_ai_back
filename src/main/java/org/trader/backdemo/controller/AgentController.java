@@ -8,7 +8,7 @@ import org.trader.backdemo.dto.response.*;
 @RestController
 
 @CrossOrigin("*")
-@RequestMapping("/")
+@RequestMapping("/api")
 public class AgentController {
 
     private final AgentService agentService;
