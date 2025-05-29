@@ -1,0 +1,67 @@
+@startuml
+' Entités principales
+class User {
+  -email: String <<PK>>
+  -name: String
+  -password: String
+}
+
+class Agent {
+  -id: Long <<PK>>
+  -name: String
+  -targetMarket: String
+  -inputStartTime: DateTime
+  -inputEndTime: DateTime
+  -inputFrequency: int //
+  -outputStartTime: DateTime
+  -outputEndTime: DateTime
+  -outputFrequency: String
+  -ready: boolean
+  -user: User <<FK>>
+}
+
+class Feature {
+  -id: Long <<PK>>
+  -name: String
+  -description: String
+}
+
+class ParameterDefinition {
+  -id: Long <<PK>>
+  -name: String
+  -defaultValue: String
+  -parameterType: ParameterType
+  -required: boolean
+  -feature: Feature <<FK>>
+}
+
+enum ParameterType {
+  STRING
+  NUMBER
+  INTEGER
+  BOOLEAN
+  DATE
+}
+
+class AgentFeature {
+  -id: Long <<PK>>
+  -agent: Agent <<FK>>
+  -feature: Feature <<FK>>
+}
+
+class ParameterValue {
+  -id: Long <<PK>>
+  -value: String
+  -agentFeature: AgentFeature <<FK>>
+  -parameterDefinition: ParameterDefinition <<FK>>
+}
+
+' Relations entre entités
+User "1" -- "*" Agent : possède >
+Agent "1" -- "*" AgentFeature : configure >
+Feature "1" -- "*" AgentFeature : utilisée dans >
+Feature "1" -- "*" ParameterDefinition : définit >
+AgentFeature "1" -- "*" ParameterValue : contient >
+ParameterDefinition "1" -- "*" ParameterValue : instancie >
+
+@enduml
