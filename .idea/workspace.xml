@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="861c6d8b-992f-40b7-8823-21fe7088b660" name="Changes" comment="wk">
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bdd_demo.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/AgentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/AgentFeatureEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/FeatureEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/ParameterValueEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/ParametreDefinitionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-azure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="861c6d8b-992f-40b7-8823-21fe7088b660" name="Changes" comment="datebase azure et local + script insertion les features et parametres">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/mapper/FeatureEntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/repository/FeatureEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/service/FeatureService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/BackDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/BackDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/controller/AgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/controller/AgentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/dto/response/FeatureResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/dto/response/FeatureResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/ParametreDefinitionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/entity/ParametreDefinitionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/trader/backdemo/service/AgentService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/FeatureConst.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/FeatureConst.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +27,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Class" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="Dockerfile" />
+        <option value="Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -46,6 +49,41 @@
     &quot;assignee&quot;: &quot;hossein-motalebi&quot;
   }
 }</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="datebase azure et local + script insertion les features et parametres" />
+        <option name="rewordedMessage" value="datebase azure et local + script insertion les features et parametres" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="fd3935f60fe3a088666b34273b2d84ae31e3fa2e" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="database" />
+                    <option name="lastUsedInstant" value="1748555524" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1748555393" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/hossein-motalebi/demo_ai_back.git&quot;,
@@ -75,6 +113,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultPlantUmlFileTemplate": "UML Class",
+    "Maven.BackDemo [clean,install].executor": "Run",
     "Maven.BackDemo [clean].executor": "Run",
     "Maven.BackDemo [install].executor": "Run",
     "Maven.BackDemo [spring-boot:run].executor": "Run",
@@ -86,7 +125,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.BackDemoApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "database",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/hosse/OneDrive - Universite Evry Val d'Essonne/latptop/ima fichier/projet AI/demo_ai_back",
@@ -95,6 +134,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   },
@@ -106,6 +148,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.trader.backdemo" />
       <recent name="org.trader.backdemo.enum" />
     </key>
   </component>
@@ -113,6 +156,7 @@
     <option name="myCommands">
       <command value="docker run --name trader-postgres -e POSTGRES_PASSWORD=password -e POSTGRES_DB=trader_db -p 5432:5432 -d postgres:15" />
       <command value="mvn spring-boot:run" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager">
@@ -175,6 +219,7 @@
       <workItem from="1747934244403" duration="3607000" />
       <workItem from="1747937952638" duration="5145000" />
       <workItem from="1748541728190" duration="8064000" />
+      <workItem from="1748635480423" duration="24258000" />
     </task>
     <task id="LOCAL-00001" summary="wk">
       <option name="closed" value="true" />
@@ -184,7 +229,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744826640986</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="datebase azure et local + script insertion les features et parametres">
+      <option name="closed" value="true" />
+      <created>1748555875442</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748555875442</updated>
+    </task>
+    <task id="LOCAL-00003" summary="datebase azure et local + script insertion les features et parametres">
+      <option name="closed" value="true" />
+      <created>1748566087880</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748566087880</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +267,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wk" />
-    <option name="LAST_COMMIT_MESSAGE" value="wk" />
+    <MESSAGE value="datebase azure et local + script insertion les features et parametres" />
+    <option name="LAST_COMMIT_MESSAGE" value="datebase azure et local + script insertion les features et parametres" />
   </component>
 </project>
