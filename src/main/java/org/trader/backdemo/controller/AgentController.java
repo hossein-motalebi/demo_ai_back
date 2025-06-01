@@ -1,8 +1,7 @@
 package org.trader.backdemo.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.trader.backdemo.service.AgentService;
+import org.trader.backdemo.service.FeatureService;
 import org.trader.backdemo.dto.response.*;
 
 @RestController
@@ -11,10 +10,10 @@ import org.trader.backdemo.dto.response.*;
 @RequestMapping("/api")
 public class AgentController {
 
-    private final AgentService agentService;
+    private final FeatureService agentService;
 
 
-    public AgentController(AgentService agentService) {
+    public AgentController(FeatureService agentService) {
         this.agentService = agentService;
     }
 

@@ -49,7 +49,7 @@
       }
     },
     {
-      "name": "Relative Strength Index (RSI)",
+      "name": "Relativ.e Strength Index (RSI)",
       "description": "RSI measures the speed and magnitude of a security's recent price changes to detect overbought or oversold conditions. It can signal when to buy and sell, typically considering RSI > 70 as overbought and RSI < 30 as oversold.",
       "parameters": {
         "Time": "",
