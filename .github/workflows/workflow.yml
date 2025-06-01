@@ -57,3 +57,7 @@ jobs:
           app-name: 'backdemoai'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: 'registredemo.azurecr.io/backdemo:latest'
+          app-settings: |
+            SPRING_DATASOURCE_URL=${{ secrets.AZURE_DB_URL }}
+            SPRING_DATASOURCE_USERNAME=${{ secrets.AZURE_DB_USERNAME }}
+            SPRING_DATASOURCE_PASSWORD=${{ secrets.AZURE_DB_PASSWORD }}
