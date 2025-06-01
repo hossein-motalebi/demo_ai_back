@@ -8,9 +8,10 @@ on:
     branches:
       - main
 env:
-  AZURE_DB_URL: ${{ secrets.AZURE_DB_URL }}
-  AZURE_DB_USERNAME: ${{ secrets.AZURE_DB_USERNAME }}
-  AZURE_DB_PASSWORD: ${{ secrets.AZURE_DB_PASSWORD }}
+    SPRING_DATASOURCE_URL=${{ secrets.AZURE_DB_URL }}
+    SPRING_DATASOURCE_USERNAME=${{ secrets.AZURE_DB_USERNAME }}
+    SPRING_DATASOURCE_PASSWORD=${{ secrets.AZURE_DB_PASSWORD }}
+
 
 jobs:
   test:
