@@ -9,8 +9,8 @@ on:
       - main
 env:
   AZURE_DB_URL: ${{ secrets.AZURE_DB_URL }}
-  DB_USERNAME: ${{ secrets.DB_USERNAME }}
-  DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+  AZURE_DB_USERNAME: ${{ secrets.AZURE_DB_USERNAME }}
+  AZURE_DB_PASSWORD: ${{ secrets.AZURE_DB_PASSWORD }}
   
 jobs:
   test:
