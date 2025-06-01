@@ -11,7 +11,7 @@ env:
   AZURE_DB_URL: ${{ secrets.AZURE_DB_URL }}
   AZURE_DB_USERNAME: ${{ secrets.AZURE_DB_USERNAME }}
   AZURE_DB_PASSWORD: ${{ secrets.AZURE_DB_PASSWORD }}
-  
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -44,7 +44,11 @@ jobs:
 
       - name: Build docker image and push
         run: |
-          docker build -t registredemo.azurecr.io/backdemo:latest .
+          docker build \
+            --build-arg AZURE_DB_URL="${{ secrets.AZURE_DB_URL }}" \
+            --build-arg AZURE_DB_USERNAME="${{ secrets.AZURE_DB_USERNAME }}" \
+            --build-arg AZURE_DB_PASSWORD="${{ secrets.AZURE_DB_PASSWORD }}" \
+            -t registredemo.azurecr.io/backdemo:latest .
           docker push registredemo.azurecr.io/backdemo:latest
 
       - name: Deploy to Azure Web App
