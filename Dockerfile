@@ -33,4 +33,4 @@ WORKDIR /opt/app
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "/opt/app/app.jar"]
+CMD ["sh", "-c", "echo \"AZURE_DB_URL=${AZURE_DB_URL}\" && echo \"AZURE_DB_USERNAME=${AZURE_DB_USERNAME}\" && java -jar /opt/app/app.jar"]
