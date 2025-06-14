@@ -7,6 +7,8 @@
     <list default="true" id="861c6d8b-992f-40b7-8823-21fe7088b660" name="Changes" comment="workflow">
       <change beforePath="$PROJECT_DIR$/.github/workflows/workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/workflow.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,10 @@
     &quot;accountId&quot;: &quot;5718ff75-7fa6-4dc6-9f07-bb042b27185d&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -46,6 +52,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BackDemoApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/hosse/OneDrive - Universite Evry Val d'Essonne/latptop/ima fichier/projet AI/demo_ai_back/BackDemo&quot;,
@@ -59,9 +66,20 @@
 }</component>
   <component name="RunManager">
     <configuration name="BackDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="azure" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="BackDemo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.trader.backdemo.BackDemoApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,8 +88,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26574.91" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26574.91" />
       </set>
     </attachedChunks>
   </component>
@@ -85,7 +103,10 @@
       <updated>1742589885534</updated>
       <workItem from="1742589886946" duration="17000" />
       <workItem from="1748812169468" duration="587000" />
-      <workItem from="1748812800855" duration="983000" />
+      <workItem from="1748812800855" duration="6176000" />
+      <workItem from="1749823070148" duration="105000" />
+      <workItem from="1749823364921" duration="7723000" />
+      <workItem from="1749838184348" duration="15052000" />
     </task>
     <task id="LOCAL-00001" summary="workflow">
       <option name="closed" value="true" />
@@ -95,7 +116,31 @@
       <option name="project" value="LOCAL" />
       <updated>1748811815560</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="workflow">
+      <option name="closed" value="true" />
+      <created>1748813820206</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748813820206</updated>
+    </task>
+    <task id="LOCAL-00003" summary="workflow">
+      <option name="closed" value="true" />
+      <created>1748813960773</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748813960773</updated>
+    </task>
+    <task id="LOCAL-00004" summary="workflow">
+      <option name="closed" value="true" />
+      <created>1748814078424</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748814078424</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +151,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
